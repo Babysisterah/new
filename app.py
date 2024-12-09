@@ -3,6 +3,7 @@ from flask import Flask
 from flask import render_template,request
 import textblob
 import google.generativeai as genai
+import os
 
 #api = "AIzaSyCwT4FKWOcmcvwnYjCVBU2CQCGqc9n0Q3c"
 api = os.getenv("makersuite")
