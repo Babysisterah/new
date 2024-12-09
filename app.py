@@ -1,3 +1,4 @@
+#api cannot appear in cloud
 from flask import Flask
 from flask import render_template,request
 import textblob
@@ -21,7 +22,7 @@ def SA():
 def SA_result():
     q = request.form.get("q")
     r = textblob.TextBlob(q).sentiment
-    return(render_template("SA_result.html",r=r))
+    return(render_template("SA_result.html",r))
 
 if __name__ == "__main__":
     app.run()
